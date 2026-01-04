@@ -1,0 +1,108 @@
+2025-12-30 12:02:51,049 |INFO | Starting the data cleaning process
+2025-12-30 12:02:51,133 |INFO | Raw data shape: (3, 5)
+2025-12-30 12:02:51,149 |INFO | Data types standardized
+2025-12-30 12:02:51,160 |INFO | Cleaned data saved for the machine learning model
+2025-12-30 12:06:59,325 |INFO | Starting the data cleaning process
+2025-12-30 12:06:59,563 |INFO | Raw data shape: (3, 5)
+2025-12-30 12:06:59,605 |INFO | Data types standardized
+2025-12-30 12:06:59,633 |INFO | Cleaned data saved for the machine learning model
+2025-12-30 13:38:19,820 |INFO | utils import working
+2025-12-30 13:43:33,234 |INFO | Starting the data cleaning process
+2025-12-30 13:43:33,611 |INFO | Raw data shape: (3, 5)
+2025-12-30 13:43:33,662 |INFO | Data types standardized
+2025-12-30 13:43:33,689 |INFO | Cleaned data saved for the machine learning model
+2025-12-30 13:57:12,965 |INFO | logged   cleaned  data for ML model training
+2025-12-30 13:57:13,142 |INFO | Loaded data with shape (3, 3) and columns: ['promotion', 'holiday', 'sales']
+2025-12-30 13:57:13,171 |INFO | initializing  the  random  forest  model
+2025-12-30 13:57:13,171 |INFO | training the model
+2025-12-30 13:57:13,270 |INFO | ML model trained and saved successfully
+2025-12-30 18:28:42,328 |INFO | MAE:393.44444444444525
+2025-12-30 18:28:42,334 |INFO | RMSE:394.2490752472779
+2025-12-30 18:28:42,335 |INFO | r2 score:0.5861269230769219
+2025-12-30 18:53:22,562 |INFO | loading trained model  for  inference
+2025-12-30 18:53:38,359 |INFO | loading trained model  for  inference
+2025-12-30 18:53:41,513 |INFO | predication generated :12428.666666666662
+2025-12-30 22:51:01,163 |INFO | recevied  the  prediction  request:promotion=1 holiday=0
+2025-12-30 22:51:01,163 |INFO | loading trained model  for  inference
+2025-12-30 22:51:31,869 |INFO | predication generated :12428.666666666662
+2025-12-30 22:51:59,607 |INFO | recevied  the  prediction  request:promotion=1 holiday=1
+2025-12-30 22:51:59,610 |INFO | loading trained model  for  inference
+2025-12-30 22:51:59,794 |INFO | predication generated :12428.666666666662
+2025-12-30 22:52:03,301 |INFO | recevied  the  prediction  request:promotion=1 holiday=1
+2025-12-30 22:52:03,302 |INFO | loading trained model  for  inference
+2025-12-30 22:52:03,477 |INFO | predication generated :12428.666666666662
+2025-12-30 23:44:09,223 |INFO | starting document  ingestion
+2025-12-30 23:44:28,767 |INFO | starting document  ingestion
+2025-12-30 23:48:24,286 |INFO | starting document  ingestion
+2025-12-30 23:48:28,546 |INFO | HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-12-30 23:48:28,547 |INFO | Loading faiss with AVX2 support.
+2025-12-30 23:48:30,071 |INFO | Successfully loaded faiss with AVX2 support.
+2025-12-31 00:16:40,612 |INFO | starting document  ingestion
+2025-12-31 00:16:46,893 |INFO | HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-12-31 00:16:46,898 |INFO | Loading faiss with AVX2 support.
+2025-12-31 00:16:47,431 |INFO | Successfully loaded faiss with AVX2 support.
+2025-12-31 00:19:44,888 |INFO | starting document  ingestion
+2025-12-31 00:19:45,917 |INFO | HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-12-31 00:19:45,923 |INFO | Loading faiss with AVX2 support.
+2025-12-31 00:19:46,155 |INFO | Successfully loaded faiss with AVX2 support.
+2025-12-31 00:24:37,281 |INFO | starting document  ingestion
+2025-12-31 00:24:39,781 |INFO | HTTP Request: POST http://127.0.0.1:11434/api/embed "HTTP/1.1 200 OK"
+2025-12-31 00:24:39,794 |INFO | Loading faiss with AVX2 support.
+2025-12-31 00:24:40,051 |INFO | Successfully loaded faiss with AVX2 support.
+2025-12-31 09:48:51,246 |WARNING | Optional RAG dependencies missing: langchain.chains (RetrievalQA). Falling back to a lightweight retriever. Install full deps with `pip install -r requirements.txt`.
+2025-12-31 09:49:28,323 |WARNING | Optional RAG dependencies missing: langchain.chains (RetrievalQA). Falling back to a lightweight retriever. Install full deps with `pip install -r requirements.txt`.
+2025-12-31 09:49:28,339 |INFO | Loading existing FAISS vector store
+2025-12-31 09:54:38,239 |WARNING | Optional RAG dependencies missing: langchain.chains (RetrievalQA). Falling back to a lightweight retriever. Install full deps with `pip install -r requirements.txt`.
+2025-12-31 09:54:49,694 |INFO | No FAISS directory at vbl_model/faiss_index; falling back to TF-IDF retriever
+2025-12-31 09:55:12,447 |INFO | TensorFlow version 2.20.0 available.
+2025-12-31 09:55:23,083 |WARNING | From C:\Users\chand\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-12-31 09:55:27,541 |INFO | RAG QA chain loaded as a lightweight retriever/LLM wrapper
+2025-12-31 09:55:27,545 |WARNING | LLM call failed; returning retrieved context
+2025-12-31 09:59:37,769 |WARNING | Optional RAG dependencies missing: langchain.chains (RetrievalQA). Falling back to a lightweight retriever. Install full deps with `pip install -r requirements.txt`.
+2025-12-31 09:59:58,172 |WARNING | Optional RAG dependencies missing: langchain.chains (RetrievalQA). Falling back to a lightweight retriever. Install full deps with `pip install -r requirements.txt`.
+2025-12-31 09:59:58,876 |INFO | No FAISS directory at vbl_model/faiss_index; falling back to TF-IDF retriever
+2025-12-31 10:00:10,681 |INFO | TensorFlow version 2.20.0 available.
+2025-12-31 10:00:19,463 |WARNING | From C:\Users\chand\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-12-31 10:00:21,668 |INFO | RAG QA chain loaded as a lightweight retriever/LLM wrapper
+2025-12-31 10:00:21,669 |WARNING | LLM call failed; returning retrieved context
+2025-12-31 10:00:49,986 |WARNING | Optional RAG dependencies missing: langchain.chains (RetrievalQA). Falling back to a lightweight retriever. Install full deps with `pip install -r requirements.txt`.
+2025-12-31 10:00:50,613 |INFO | No FAISS directory at vbl_model/faiss_index; falling back to TF-IDF retriever
+2025-12-31 10:00:56,935 |INFO | TensorFlow version 2.20.0 available.
+2025-12-31 10:01:04,933 |WARNING | From C:\Users\chand\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-12-31 10:01:06,416 |INFO | RAG QA chain loaded as a lightweight retriever/LLM wrapper
+2025-12-31 10:01:06,416 |INFO | QA chain loaded from __main__
+2025-12-31 10:01:06,417 |WARNING | LLM call failed; returning retrieved context
+2025-12-31 10:20:54,989 |WARNING | Optional RAG dependencies missing: langchain.chains (RetrievalQA). Falling back to a lightweight retriever. Install full deps with `pip install -r requirements.txt`.
+2025-12-31 10:21:21,656 |INFO | No FAISS directory at vbl_model/faiss_index; falling back to TF-IDF retriever
+2025-12-31 10:21:22,505 |INFO | RAG QA chain loaded as a lightweight retriever/LLM wrapper
+2025-12-31 10:21:22,505 |INFO | QA chain loaded from __main__
+2025-12-31 10:21:22,514 |WARNING | LLM call failed; returning retrieved context
+2025-12-31 10:26:52,205 |WARNING | Optional RAG dependencies missing: langchain.chains (RetrievalQA). Falling back to a lightweight retriever. Install full deps with `pip install -r requirements.txt`.
+2025-12-31 10:26:57,051 |INFO | No FAISS directory at vbl_model/faiss_index; falling back to TF-IDF retriever
+2025-12-31 10:26:57,630 |INFO | RAG QA chain loaded as a lightweight retriever/LLM wrapper
+2025-12-31 10:26:57,630 |INFO | QA chain loaded from __main__
+2025-12-31 10:26:57,642 |WARNING | LLM call failed; returning retrieved context
+2025-12-31 10:35:40,377 |WARNING | Optional RAG dependencies missing: langchain.chains (RetrievalQA). Falling back to a lightweight retriever. Install full deps with `pip install -r requirements.txt`.
+2025-12-31 10:35:44,633 |INFO | No FAISS directory at vbl_model/faiss_index; falling back to TF-IDF retriever
+2025-12-31 10:35:45,151 |INFO | RAG QA chain loaded as a lightweight retriever/LLM wrapper
+2025-12-31 10:35:45,151 |INFO | QA chain loaded from __main__
+2025-12-31 10:35:45,166 |WARNING | LLM call failed; returning retrieved context
+2025-12-31 10:52:26,859 |INFO | Using TF-IDF fallback retriever built from local documents
+2025-12-31 10:52:52,185 |INFO | TensorFlow version 2.20.0 available.
+2025-12-31 10:53:02,899 |WARNING | From C:\Users\chand\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+2025-12-31 10:53:07,056 |INFO | TF-IDF retriever built and loaded
+2025-12-31 10:53:07,073 |WARNING | LLM call failed; returning retrieved context
+2025-12-31 11:06:24,117 |INFO | Using TF-IDF fallback retriever built from local documents
+2025-12-31 11:06:27,535 |INFO | TF-IDF retriever built and loaded
+2025-12-31 11:06:27,547 |INFO | RAG QA chain loaded at startup
+2025-12-31 11:07:57,104 |INFO | Received prediction request: promotion=1 holiday=0
+2025-12-31 11:07:57,109 |INFO | loading trained model  for  inference
+2025-12-31 11:08:04,805 |INFO | predication generated :12428.666666666662
+2025-12-31 11:10:22,089 |INFO | RAG question received: how much Festive discount 
+2025-12-31 11:10:22,288 |WARNING | LLM call failed; returning retrieved context
+2025-12-31 12:09:54,233 |INFO | RAG question received: how much Festive discount 
+2025-12-31 12:09:54,382 |WARNING | LLM call failed; returning retrieved context
